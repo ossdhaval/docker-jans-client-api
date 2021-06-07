@@ -31,9 +31,12 @@ jobs:
           value=`cat hello-world.txt`
           echo $value
       
-#       - name: Print env variables
-#         run: 
-#           echo ${ENV}
+      - name: Print env variables
+        run: 
+          echo "----<"
+          value=`cat hello-world.txt`
+          echo $value
+          echo ${ENV}
 
 #       - name: Print github context
 #         shell: bash
