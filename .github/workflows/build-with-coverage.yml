@@ -99,8 +99,8 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@master
         with:
           args: >
-            -Dsonar.organization=${{ env.GITHUB_REPOSITORY_OWNER }}
-            -Dsonar.projectKey=${{ env.GITHUB_REPOSITORY }}
+            -Dsonar.organization=${{GITHUB_REPOSITORY_OWNER}}
+            -Dsonar.projectKey=${{GITHUB_REPOSITORY}}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
