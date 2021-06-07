@@ -24,6 +24,7 @@ jobs:
         run: |
           echo "---->"
           echo Hello World! > hello-world.txt
+          echo good to be here >> hello-world.txt
           
       - shell: bash
         run: |
