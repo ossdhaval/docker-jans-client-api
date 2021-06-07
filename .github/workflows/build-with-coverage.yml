@@ -28,8 +28,8 @@ jobs:
       - shell: bash
         run: |
           echo "----<"
-          value=`cat hello-world/hello-world.txt`
-          echo $value > hello-world/hello-world.txt
+          value=`cat hello-world.txt`
+          echo $value
       
 #       - name: Print env variables
 #         run: 
