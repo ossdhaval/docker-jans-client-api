@@ -98,7 +98,6 @@ jobs:
         if: contains(env.NON_JVM_PROJECTS, github.repository)
         uses: SonarSource/sonarcloud-github-action@master
           with:
-            projectBaseDir: my-custom-directory
             args: >
               -Dsonar.organization=${{GITHUB_REPOSITORY_OWNER}}
               -Dsonar.projectKey=${{GITHUB_REPOSITORY}}
