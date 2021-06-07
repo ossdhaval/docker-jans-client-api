@@ -21,8 +21,14 @@ jobs:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of sonarqube analysis
       
       - shell: bash
+        env:
+          ORGANIZATION: ${{ github.repository_owner }}
+          PROJECT_KEY: ${{ github.repository.name }}
         run: |
           echo "---->"
+          
+          echo $ORGANIZATION
+          echo $PROJECT_KEY
           echo Hello World! > hello-world.txt
           echo good to be here >> hello-world.txt
           
