@@ -23,7 +23,7 @@ jobs:
       - shell: bash
         env:
           ORGANIZATION: ${{ github.repository_owner }}
-          PROJECT_KEY: ${{ github.repository.name }}
+          PROJECT_KEY: ${{ github.repository }}
         run: |
           echo "---->"
           
